@@ -17,5 +17,6 @@ else:
     if table.is_integer() == True:
         table = int(table)
     index = int(index)
-    multi_table(table) 
+    multi_table(table) 
+
 

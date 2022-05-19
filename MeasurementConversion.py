@@ -42,18 +42,23 @@ def F_C():
 
      
 if __name__ == '__main__':
-    print_menu() 
-    choice = input('Which conversion would you like to do?: ')
-    match choice:
-        case '1':
-             km_miles()
-        case '2':
-             miles_km()
-        case '3':
-            kg_lb()
-        case '4':
-            lb_kg()
-        case '5':
-            C_F()
-        case '6':
-            F_C()
+     while True:
+         print_menu() 
+         choice = input('Which conversion would you like to do?: ')
+         match choice:
+             case '1':
+                  km_miles()
+             case '2':
+                  miles_km()
+             case '3':
+                 kg_lb()
+             case '4':
+                 lb_kg()
+             case '5':
+                 C_F()
+             case '6':
+                 F_C()
+
+     answer = input('Do you want to exit? Type \'y\' for yes ')
+     if answer == 'y':
+          break
