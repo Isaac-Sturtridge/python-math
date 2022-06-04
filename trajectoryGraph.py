@@ -59,6 +59,9 @@ if __name__ == '__main__':
     except ValueError:
         print('You entered an invalid input')
 
+    except no > 10:
+        print('Too many trajectories')
+
     else:
         for i in range(len(u_values)):
             print(f'Stats for trajectory {i+1}: ')
